@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" style="transition: background-color 0.15s;">
+    <head>
+        <style>
+            body{
+                transition: opacity ease-in 0.2s;
+            }
+            body[unresolved] {
+                opacity: 0;
+                display: block;
+                overflow: hidden;
+                position: relative;
+            }
+        </style>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>anannyaa.sr/website</title>
+    </head>
+    <body>
+        <div class="splash-screen">
+            <div class="splash-content">
+                <span class="prompt-symbol">anannyaa</span>
+                <span class="typewriter">./welcome.sh</span>
+                <span class="terminal-cursor"></span>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="prompt">
+                <span class="prompt-symbol">anannyaa</span>
+                <span class="command">$ welcome</span>
+            </div>
+            <div class="output">
+                <div id="welcome" class="section">
+                    <div class="welcome-screen">
+                        <h1>Welcome to my website!</h1>
+                        <div class="quote">" "The truth is you don't know what is going to happen tomorrow. Life is a crazy ride, and nothing is guaranteed." "
+                        <br>
+                        — Eminem
+                    </div>
+                    <div class="ascii-art">
+                        <pre></pre>
+                    </div>
+                    </div>
+                </div>
+                <nav class="nav">
+                    <span class="nav-item active" onclick="showSection('notes')">[n] notes</span>
+                    <span class="nav-item active" onclick="showSection('about')">[a] about</span>
+                    <span class="nav-item active" onclick="showSection('projects')">[p] projects</span>
+                    <span class="nav-item active" onclick="showSection('contact')">[c] contact</span>
+                    <span class="nav-item active" onclick="showSection('skills')">[s] skills</span>
+                    <span class="nav-item active" onclick="showSection('welcome')">[h] home</span>
+                </nav>
+                <div id="about" class="section">
+                    <h1>About Me</h1>
+                    <div class="info-grid">
+                        <div class="info-label">Name:</div>
+                        <div class="info-value">Anannyaa</div>
+                        <div class="info-label">Location:</div>
+                        <div class="info-value">Earth</div>
+                        <div class="info-label">Occupation:</div>
+                        <div class="info-value">Student</div>
+                        <div class="info-label">Interests:</div>
+                        <div class="info-value">Coding, Music, Art, Gaming, Photography</div>
+                        <div class="info-label">Languages:</div>
+                        <div class="info-value">HTML, CSS, JavaScript, Python</div>
+                        <div class="info-label">Bio:</div>
+                        <div class="info-value">Aspiring developer and tech enthusiast. Studying to be a mechatronics engineer. Been coding since 2020.</div>
+                    </div>
+                </div>
+                <div id="projects" class="section">
+                    <h1>Projects</h1>
+                    <ul class="project-list">
+                        <li class="project-item">
+                            <h2>Project 1: Personal Website</h2>
+                            <p>A personal website to showcase my portfolio and blog about tech topics.</p>
+                        </li>
+                        <li class="project-item">
+                            <h2>Spotify Clone</h2>
+                            <img src="img.png" style="width:300px;height:auto;">
+                            <p>Spotify clone built with HTML, CSS, and JavaScript.</p>
+                        </li>
+                        <li class="project-item">
+                            <h2>Digital Clock</h2>
+                            <img src="Untitled design (8).png" style="width:300px;height:auto;">
+                            <p>Digital Clock using HTML, CSS, and JavaScript.</p>
+                        </li>
+                    </ul>
+                    <p style="color: #666; margin-top:20px">' --> currently working on some other cool things'</p>
+            </div>
+            <div id="contact" class="section">
+                <h1>Contact Me</h1>
+                <p>Email: anannyaasrivastava@gmail.com</p>
+                <p>Discord username: _111001_</p>
+                <p>GitHub: <a href="https://github.com/NotAnannyaaXD" target="_blank">github.com/NotAnannyaaXD</a></p>  
+                <p>Instagram: <a href="https://www.instagram.com/eepy_anannyaa/" target="_blank">instagram.com/eepy_anannyaa</a></p>
+            </div>
+            <div id="skills" class="section">
+                <h1>Skills</h1>
+                <ul class="skills-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>Git & GitHub</li>
+                    <li>Basic knowledge of C++ and Java</li>
+                    <li>Sketching</li>
+                    <li>Digital Art</li>
+                    <li>Photography</li>
+                </ul>
+            </div>
+            <div id="notes" class="section">
+                <h1>Leave a note</h1>
+                <p style="color: #666; margin-bottom: 20px">Anonymous Notes are Welcome</p>
+                <form action="https://formspree.io/f/mrebaoej" method="POST">
+                    <textarea name="message" placeholder="Type your message here... " required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+        </div>
+        <script src="script.js"></script>
+        <div class="otto-shadow-dom" id="otto-shadow-dom-id"></div>
+    </body>
+    <screen-shader style="display: block; transition: none; margin: 0px; padding: 0px; border-radius: 0px; border: none; outline: none; visibility: visible; max-height: none; max-width: none; clip: unset; overflow: visible; opacity: 1;">
+        <div style="display: block; transition: none; margin: 0px; padding: 0px; border-radius: 0px; border: none; outline: none; visibility: visible; max-height: none; max-width: none; clip: unset; overflow: visible; opacity: 0; position: fixed; inset: -10%; width: auto; height: auto; z-index: 2147483646; background: black;"></div>
+        <div style="display: block; transition: none; margin: 0px; padding: 0px; border-radius: 0px; border: none; outline: none; visibility: visible; max-height: none; max-width: none; clip: unset; overflow: visible; opacity: 0; position: fixed; inset: -10%; width: auto; height: auto; z-index: 2147483645; background: rgba(48, 48, 48, 0.8); mix-blend-mode: multiply;"></div>
+        <style>screen-shader{pointer-events: none !important;z-index: auto !important;}</style>
+        <style></style>
+        <html style="display: block; transition: none; margin: 0px; padding: 0px; border-radius: 0px; border: none; outline: none; visibility: visible; max-height: none; max-width: none; clip: unset; overflow: visible; opacity: 1; position: fixed; inset: -10%; width: auto; height: auto; z-index: -2147483647;"></html>
+        <div style="display: block; transition: none; margin: 0px; padding: 0px; border-radius: 0px; border: none; outline: none; visibility: visible; max-height: none; max-width: none; clip: unset; overflow: visible; opacity: 1; position: fixed; inset: -10%; width: auto; height: auto; z-index: -2147483646; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(0, 0, 0);"></div>
+    </screen-shader>
+</html>
